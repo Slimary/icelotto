@@ -1,0 +1,739 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700,300italic,600italic);
+@font-face {
+	font-family: 'ChunkFive';
+	src: url('../fonts/ChunkFive-Roman.eot');
+	src: url('../fonts/ChunkFive-Roman.woff2') format('woff2'),
+	url('../fonts/ChunkFive-Roman.woff') format('woff'),
+	url('../fonts/ChunkFive-Roman.ttf') format('truetype'),
+	url('../fonts/ChunkFive-Roman.svg#ChunkFive-Roman') format('svg'),
+	url('../fonts/ChunkFive-Roman.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*------------------------------------*\
+Reset Stylesheet
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {height: 100%;}
+
+body {
+	height: 100%;
+	font: 13px/18px 'Open Sans', Tahoma, sans-serif;
+	color: #000;
+	background: #fff url(../img/bg.jpg) no-repeat left top;
+}
+
+ol, ul {list-style: none;}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.left {float: left;}
+.right {float: right;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS Reset */
+
+#wrapper {
+	min-height: 1080px;
+	height: auto !important;
+	height: 100%;
+	background: url(../img/ball7.png) no-repeat bottom 0 left 88px, url(../img/ball2.png) no-repeat bottom 54px right 777px, url(../img/ball1.png) no-repeat bottom 40px right 310px, url(../img/ball3.png) no-repeat bottom 106px right 115px, url(../img/ticket.png) no-repeat bottom left 520px;
+}
+
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+
+/*==========LOGO==========*/
+
+#header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+#header .container {
+	margin: 0 93px;
+}
+
+.logo {
+	padding: 13px 25px 24px 29px;
+	width: 332px;
+	background: #fff;
+
+	-webkit-border-radius: 0 0 15px 15px;
+	-moz-border-radius:  0 0 15px 15px;
+	-o-border-radius: 0 0 15px 15px;
+	border-radius: 0 0 15px 15px;
+
+	-webkit-box-shadow: 5px 0 16px rgba(116, 116, 116, .45);
+	-moz-box-shadow: 5px 0 16px rgba(116, 116, 116, .45);
+	-o-box-shadow: 5px 0 16px rgba(116, 116, 116, .45);
+	box-shadow: 5px 0 16px rgba(116, 116, 116, .45);
+}
+
+
+/*==========BANNER==========*/
+
+#banner {
+	padding-top: 35px;
+	text-align: center;
+	background: url(../img/banner-behind.png) no-repeat center bottom;
+}
+
+#banner img {
+	max-width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+/*==========MAIN==========*/
+
+#main {
+	padding-bottom: 10px;
+	height: 100%;
+	padding-top: 42px;
+}
+
+#main .container {
+	margin: 0 158px;
+}
+
+#main .right {
+	width: 824px;
+	text-align: center;
+}
+
+#main h3 {
+	margin-bottom: 60px;
+	color: #0a52a0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	line-height: 44px;
+	font-size: 26.3px;
+}
+
+#main h3 span {
+	font-size: 29px;
+	text-transform: uppercase;
+}
+
+#main h2 {
+	margin-bottom: 15px;
+	color: #0a52a0;
+	font-family: 'ChunkFive';
+	font-size: 30px;
+	line-height: 30px;
+
+	-webkit-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px 5px #000;
+	-moz-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px 5px #000;
+	-o-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px 5px #000;
+	text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px 5px #000;
+}
+
+#main ul,
+#formID ul {
+	margin-bottom: 15px;
+}
+
+#main li,
+#formID li {
+	display: inline-block;
+	width: 131px;
+	height: 117px;
+	background-color: #0a52a0;
+	border: 3px solid #fff;
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 89px;
+	font-weight: 700;
+	line-height: 117px;
+
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+	border-radius: 9px;
+
+	-webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	-o-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+}
+
+#main ul li + li {
+	margin-left: 4px;
+}
+
+#main .start,
+#formID .btn {
+	display: inline-block;
+	width: 350px;
+	line-height: 70px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-size: 47px;
+	color: #fff;
+	background: #fb0000;
+	border: 3px solid #fff;
+	cursor: pointer;
+
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-o-border-radius: 13px;
+	border-radius: 13px;
+
+	-webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	-o-box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, .3);
+}
+
+#main .start:hover,
+#formID .btn:hover {
+	background: #d90101;
+
+	-webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	-o-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+}
+
+
+/*==========FORM==========*/
+
+.hidden {
+	display: none;
+}
+
+#formID {
+	position: relative;
+	max-width: 440px;
+	height: 682px;
+	margin: auto;
+	padding: 30px 41px 58px 32px;
+	border: 1px solid #d2d2d2;
+	background: #fbfbfb;
+
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+
+	-webkit-box-shadow: 1px 0px 7px rgba(0, 0, 0, .17);
+	-moz-box-shadow: 1px 0px 7px rgba(0, 0, 0, .17);
+	-o-box-shadow: 1px 0px 7px rgba(0, 0, 0, .17);
+	box-shadow: 1px 0px 7px rgba(0, 0, 0, .17);
+}
+
+#formID .title {
+	margin-bottom: 65px;
+	font-family: 'Open Sans';
+	color: #0a52a0;
+	font-size: 23px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#formID .title:after {
+	position: absolute;
+	top: 180px;
+	left: 0;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #0a52a0;
+}
+
+#formID .title h4 {
+	margin-bottom: 20px;
+}
+
+#formID .title span {
+	color: #fb0000;
+	font-style: italic;
+}
+
+#formID ul {
+	margin-bottom: 20px;
+}
+
+#formID li {
+	width: 50px;
+	height: 42px;
+	text-align: center;
+	font-size: 34px;
+	line-height: 34px;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#formID ul li + li {
+	margin-left: 6px;
+}
+
+#formID .text-input {
+	height: 60px;
+	width: 100%;
+	margin-bottom: 20px;
+	background: #e1e1e1;
+	border: 1px solid #ccc;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#formID input[type="text"] {
+	padding: 0 15px;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	line-height: 64px;
+	font-style: italic;
+	color: #393939;
+}
+
+#formID .btn {
+	padding-right: 25px;
+	background: #fb0000 url(../img/arrow.png) no-repeat right 45px center;
+	width: 100%;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+#formID .btn:hover {
+	background: #d90101 url(../img/arrow.png) no-repeat right 45px center;
+}
+
+#formID .mfp-close {
+	height: 71px;
+	width: 71px;
+	top: -50px;
+	right: -90px;
+	text-indent: -9999px;
+	background: url(../img/exit.png) no-repeat right center;
+}
+
+#formID .formError {
+	left: 30px!important;
+	margin-top: 58px!important;
+	opacity: 1!important;
+
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	-o-box-shadow: none!important;
+	box-shadow: none!important;
+}
+
+#formID .formErrorArrow {
+	display: none;
+}
+
+#formID .formError .formErrorContent {
+	border: none;
+	font-family: 'Open Sans';
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 38px;
+	background: #e20000;
+
+	-webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	-o-box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+}
+
+#formID .formError .formErrorContent:before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 0;
+	margin-left: 8px;
+	margin-top: -18px;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid #e20000;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+	body {
+		background-size: 635px;
+	}
+	#wrapper {
+		background: url(../img/ball2.png) no-repeat top 302px right 9px, url(../img/ball1.png) no-repeat top 139px left 30px, url(../img/ball3.png) no-repeat top 282px left 24px, url(../img/ticket.png) no-repeat top 230px right -60px;
+		background-size: 51px, 47px, 49px, 231px;
+		min-height: 830px;
+	}
+	#banner img {
+		top: 50px;
+		position: absolute;
+	}
+	#header .container {
+		margin: 0 auto;
+	}
+	#header .logo {
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+		padding: 10px 20px;
+	}
+	#header .logo img {
+		width: 100%;
+	}
+	#banner {
+		padding-top: 70px;
+	}
+	#main .c_arrow {
+		top: 310px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		display: block;
+		position: absolute;
+		height: 73px;
+		width: 72px;
+		background: url(../img/c-arrow.png) no-repeat center center;
+		cursor: pointer;
+
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+	}
+	#main .container {
+		margin: 0 auto;
+	}
+	#main .right {
+		margin: 0 auto;
+		float: none;
+		width: 300px;
+	}
+	#main li,
+	#formID li {
+		width: 126px;
+		height: 113px;
+		line-height: 113px;
+		margin-bottom: 5px;
+	}
+	#main {
+		padding-top: 317px;
+	}
+	#main h2 {
+		font-size: 21px;
+		margin-bottom: 10px;
+	}
+	#main h3 {
+		position: absolute;
+		margin: 0;
+		top: 730px;
+		width: 300px;
+		text-align: left;
+		line-height: 22px;
+		padding: 0 13px;
+		font-size: 16px;
+	}
+	#main h3 span {
+		font-size: 16px;
+	}
+	#main ul {
+		display: none;
+	}
+	#form {
+		display: block;
+		top: 0;
+		position: relative;
+		;
+	}
+	#formID {
+		max-width: 290px;
+		height: 100%;
+		margin-bottom: 20px;
+		top: 0;
+		padding: 20px 20px 35px 20px;
+		;
+	}
+	#formID ul {
+		margin: 0px -25px;
+		position: relative;
+		top: -303px;
+	}
+	#formID li {
+		width: 88px;
+		height: 82px;
+		line-height: 74px;
+		font-size: 65px;
+
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+		border-radius: 15px;
+	}
+	#formID ul li + li {
+		margin-left: 0;
+	}
+	#formID .title {
+		height: 65px;
+	}
+	#formID .title:after {
+		top: 125px;
+	}
+	#formID input[type="text"] {
+		font-size: 16px;
+		padding: 0 10px;
+	}
+	#formID .btn {
+		height: 55px;
+		font-size: 15px;
+		line-height: 10px;
+	}
+	#formID .text-input {
+		height: 35px;
+		margin-bottom: 15px;
+	}
+	#formID h4.top_title {
+		display: none;
+	}
+	#formID h4.bottom_title {
+		line-height: 36px;
+		position: relative;
+		bottom: 170px;
+		font-size: 18px;
+	}
+	#formID h4.bottom_title b {
+		font-size: 50px;
+		padding: 0 15px 0 20px;
+	}
+	#main .start {
+		width: 300px;
+		font-size: 35px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+	body {
+		background-size: 970px;
+	}
+	#wrapper {
+		background: url(../img/ball2.png) no-repeat top 477px right 13px, url(../img/ball1.png) no-repeat top 211px left 44px, url(../img/ball3.png) no-repeat top 434px left 45px, url(../img/ticket.png) no-repeat top 353px right -93px;
+		background-size: 67px, 72px, 66px, 347px;
+		min-height: 1100px;
+	}
+	#banner img {
+		top: 70px;
+		position: absolute;
+	}
+	#main .c_arrow {
+		top: 495px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		display: block;
+		position: absolute;
+		height: 73px;
+		width: 72px;
+		background: url(../img/c-arrow.png) no-repeat center center;
+		cursor: pointer;
+
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+	}
+	#header .container {
+		margin: 0 auto;
+	}
+	#header .logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#banner {
+		padding-top: 70px;
+	}
+	#main .container {
+		margin: 0 auto;
+	}
+	#main .right {
+		margin: 0 auto;
+		width: 400px;
+		float: none;
+	}
+	#main li,
+	#formID li {
+		width: 126px;
+		height: 113px;
+		line-height: 113px;
+		margin-bottom: 5px;
+	}
+	#main {
+		padding-top: 505px;
+	}
+	#main h2 {
+		font-size: 28px;
+	}
+	#main h3 {
+		position: absolute;
+		margin: 0;
+		top: 970px;
+		width: 400px;
+		text-align: left;
+		line-height: 30px;
+		padding: 0 13px;
+		font-size: 22px;
+	}
+	#main ul {
+		display: none;
+	}
+	#form {
+		display: block;
+		top: 0;
+		position: relative;
+		;
+	}
+	#formID {
+		max-width: 420px;
+		height: 100%;
+		top: 0;
+		padding: 20px 20px 35px 20px;
+		margin-bottom: 20px;
+		;
+		;
+	}
+	#formID ul {
+		margin: 0px -24px;
+		position: relative;
+		top: -380px;
+	}
+	#formID li {
+		width: 126px;
+		height: 108px;
+		line-height: 93px;
+		font-size: 84px;
+
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+		border-radius: 15px;
+	}
+	#formID ul li + li {
+		margin-left: 0;
+	}
+	#formID .title {
+		height: 100px;
+	}
+	#formID .title:after {
+		top: 160px;
+	}
+	#formID h4.top_title {
+		display: none;
+	}
+	#formID h4.bottom_title {
+		line-height: 50px;
+		position: relative;
+		bottom: 230px;
+		font-size: 26px;
+	}
+	#formID h4.bottom_title b {
+		font-size: 61px;
+		padding: 0 75px;
+	}
+	#main .start {
+		width: 390px;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	#banner {
+		padding-top: 55px;
+	}
+	#main .container {
+		margin: 0 auto;
+	}
+	#main .right {
+		margin: 0 auto;
+		width: 545px;
+		float: none;
+	}
+	#main li,
+	#formID li {
+		margin-bottom: 5px;
+	}
+	#wrapper {
+		background: url(../img/ball7.png) no-repeat bottom 0 left 88px, url(../img/ball2.png) no-repeat bottom 54px right 777px, url(../img/ball1.png) no-repeat bottom 40px right 310px, url(../img/ball3.png) no-repeat bottom 106px right 115px, url(../img/ticket.png) no-repeat bottom left 380px;
+	}
+	#formID .mfp-close {
+		right: -70px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	#main .container {
+		margin: 0 auto;
+	}
+	#main .right {
+		margin: 0 auto;
+		float: none;
+	}
+}
